@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using GunSmithV2.Data;
 using GunSmithV2.Models;
 
+using Microsoft.AspNetCore.Cors;
+
 namespace GunSmithV2.Controllers
 {
     [Route("api/[controller]")]
@@ -23,6 +25,7 @@ namespace GunSmithV2.Controllers
 
         // GET: api/GunItems
         [HttpGet]
+        [EnableCors]
         public async Task<ActionResult<IEnumerable<GunItem>>> GetGunItems()
         {
             return await _context.GunItems.ToListAsync();
