@@ -24,8 +24,8 @@ namespace GunSmithV2.Controllers
         }
 
         // GET: api/GunItems
+        [EnableCors("Blackrock")]
         [HttpGet]
-        [EnableCors]
         public async Task<ActionResult<IEnumerable<GunItem>>> GetGunItems()
         {
             return await _context.GunItems.ToListAsync();
