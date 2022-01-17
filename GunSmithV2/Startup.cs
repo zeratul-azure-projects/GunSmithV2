@@ -35,7 +35,7 @@ namespace GunSmithV2
                     builder =>
                     {
                         builder.WithOrigins("https://gunsmithappsite.azurewebsites.net/",
-                                            "https://m70zc.csb.app/");
+                                            "https://m70zc.csb.app/").WithMethods("PUT", "DELETE", "GET"); ;
                     });
 
 
