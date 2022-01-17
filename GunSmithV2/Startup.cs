@@ -66,11 +66,11 @@ namespace GunSmithV2
 
             app.UseHttpsRedirection();
 
-            app.UseCors();
-
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
