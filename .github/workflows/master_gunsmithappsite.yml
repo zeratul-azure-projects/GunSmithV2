@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'GunSmithAppSite'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0A668D54B6704C659E00F5AD890FB9C2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9355F2D396C047A18C3A6C93147EF67D }}
           package: .
